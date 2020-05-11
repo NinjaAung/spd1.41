@@ -18,12 +18,12 @@ prime_num : int, the most recent prime of the while loop
 
 assumptions: if no prime is found return otherwise return the last index
 '''
-def is_prime(n) :
-    if n % 2 == 0 or n % 3 == 0 : 
+def is_prime(num) :
+    if num % 2 == 0 or num % 3 == 0 : 
         return False
     i = 5
-    while i**2 <= n : 
-        if n % i == 0 or n % (i + 2) == 0 : 
+    while i**2 <= num : 
+        if num % i == 0 or num % (i + 2) == 0 : 
             return False
         i += 6
     return True
