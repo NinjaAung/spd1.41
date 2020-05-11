@@ -29,4 +29,4 @@ def non_repeating(string):
   if len(dic) == 0:
     return None
 
-  return dic
+  return list(dic.keys())[0]
